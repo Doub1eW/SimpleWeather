@@ -1,0 +1,109 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div id="wrap">
+      <form action="" autocomplete="off" class="search-form">
+        <input
+          id="search"
+          name="search"
+          type="text"
+          placeholder="Where?"
+          class="search-input"
+          spellcheck="false"
+        /><input id="search_submit" value="Rechercher" type="submit" />
+      </form>
+    </div>
+
+    <div class="wrapper">
+      <div class="wrapper-inner">
+        <h2 class="wrapper-cityName left"></h2>
+        <div class="right">
+          <div class="right-upper">
+            <h4 class="current-temp"></h4>
+            <span class="right-upper-span"></span>
+            <img class="weather-icon" src="./assets/Cloud.svg" alt="" />
+          </div>
+          <div class="right-lower">
+            <p class="feels-like-text"></p>
+            <span class="feels-like-temp"></span>
+            <span class="right-lower-span"></span>
+          </div>
+        </div>
+      </div>
+      <a href="#box" class="arrow">
+        <img src="./assets/arrow.svg" alt="" />
+      </a>
+    </div>
+
+    <div class="box" id="box">
+      <h1 class="box-title">Next Five Days</h1>
+      <div class="columnbg">
+        <div class="columnbase">
+          <div class="columnhigher">
+            <h3>MON</h3>
+          </div>
+          <div class="columnlower">
+            <img src="assets/Cloud.svg" alt="" />
+            <h2 class="mon-temp">-2</h2>
+          </div>
+        </div>
+        <div class="columnbase">
+          <div class="columnhigher">
+            <h3>TUE</h3>
+          </div>
+          <div class="columnlower">
+            <img src="assets/Cloud.svg" alt="" />
+            <h2 class="tue-temp">-2</h2>
+          </div>
+        </div>
+        <div class="columnbase">
+          <div class="columnhigher">
+            <h3>WED</h3>
+          </div>
+          <div class="columnlower">
+            <img src="assets/Cloud.svg" alt="" />
+            <h2 class="wed-temp">-2</h2>
+          </div>
+        </div>
+        <div class="columnbase">
+          <div class="columnhigher">
+            <h3>THU</h3>
+          </div>
+          <div class="columnlower">
+            <img src="assets/Cloud.svg" alt="" />
+            <h2 class="thu-temp">-2</h2>
+          </div>
+        </div>
+        <div class="columnbase">
+          <div class="columnhigher">
+            <h3>FRI</h3>
+          </div>
+          <div class="columnlower">
+            <img src="assets/Cloud.svg" alt="" />
+            <h2 class="fri-temp">-2</h2>
+          </div>
+        </div>
+      </div>
+
+      <a href="#daycycle" class="arrow">
+        <img src="./assets/arrow.svg" alt="" />
+      </a>
+    </div>
+
+    <div class="wrapper" id="daycycle">
+      <div class="timed">
+        <h1 class="timed-cityName"></h1>
+        <h2 class="timed-temp"></h2>
+        <h3 class="currentTime"></h3>
+      </div>
+    </div>
+    <div class="scroll"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
