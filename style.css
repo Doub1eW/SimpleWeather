@@ -274,3 +274,35 @@ body::-webkit-scrollbar-thumb {
   font-weight: normal;
   margin-bottom: 0%;
 }
+
+.leftbox {
+  height: 700px;
+  width: 500px;
+  background-color: #161a43;
+  border-radius: 20px;
+  background: #0a1025;
+  background: #0a1025;
+  box-shadow: inset -20px 20px 32px #04060f, inset 20px -20px 32px #101a3b;
+}
+
+.rightupperbox {
+  height: 300px;
+  width: 900px;
+  background-color: #161a43;
+  margin-left: 100px;
+  border-radius: 20px;
+  margin-top: -400px;
+
+  background: #0a1025;
+  box-shadow: inset -20px 20px 32px #04060f, inset 20px -20px 32px #101a3b;
+}
+.rightlowerbox {
+  height: 300px;
+  width: 900px;
+  background-color: #161a43;
+  margin-top: 400px;
+  margin-left: -900px;
+  border-radius: 20px;
+  background: #0a1025;
+  box-shadow: inset -20px 20px 32px #04060f, inset 20px -20px 32px #101a3b;
+}
