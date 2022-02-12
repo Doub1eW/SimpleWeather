@@ -9,6 +9,12 @@ searchForm.addEventListener("submit", (e) => {
   convert(searchInput.value);
 });
 
+function getDay(dt) {
+  return new Date(dt * 1000)
+    .toLocaleString("en-us", { weekday: "long" })
+    .slice(0, 3);
+}
+
 function convert(city) {
   const api = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=a44ac84a0376afc7ec22f54b1631dc2e`;
 
@@ -54,12 +60,7 @@ function getCurrentLocation() {
 }
 getCurrentLocation();
 
-function getWeekDay() {
-  new Date().toLocaleString("en-us", { weekday: "long" }).slice(0, 3);
-  console.log(Date);
-}
-
-getWeekDay();
+// getWeekDay();
 
 function getWeather(lat, lon) {
   document.querySelector(".right-upper-span").textContent = "°C";
@@ -82,29 +83,35 @@ function getWeather(lat, lon) {
       document.querySelector(".feels-like-temp").textContent = Math.round(
         data.current.feels_like
       );
-      document.querySelector(".timed-temp").textContent = Math.round(
-        data.current.temp
-      );
-      document.querySelector(".currentTime").textContent =
-        new Date().toLocaleTimeString([], {
-          hour12: false,
-          hour: "2-digit",
-          minute: "2-digit",
-        });
-      document.querySelector(".mon-temp").textContent = Math.round(
-        data.daily[0].temp.day
-      );
-      document.querySelector(".tue-temp").textContent = Math.round(
-        data.daily[1].temp.day
-      );
-      document.querySelector(".wed-temp").textContent = Math.round(
-        data.daily[2].temp.day
-      );
-      document.querySelector(".thu-temp").textContent = Math.round(
-        data.daily[3].temp.day
-      );
-      document.querySelector(".fri-temp").textContent = Math.round(
-        data.daily[4].temp.day
-      );
+
+      // document.querySelector(".currentTime").textContent =
+      //   new Date().toLocaleTimeString([], {
+      //     hour12: false,
+      //     hour: "2-digit",
+      //     minute: "2-digit",
+      //   });
+
+      for (let i = 1; i < 6; i++) {
+        document.querySelector(`.day-${i}`).textContent = getDay(
+          data.daily[i].dt
+        );
+
+        document.querySelector(`.day-${i}-temp`).textContent = Math.round(
+          data.daily[i].temp.day
+        );
+
+        document.querySelector(`.day-${i}-feels`).textContent = Math.round(
+          data.daily[i].feels_like.day
+        );
+
+        document.querySelector(
+          `.day-${i}-img`
+        ).src = `/assets/${data.daily[i].weather[0].main}.png`;
+      }
     });
 }
+
+// Weather type: Thunderstorm, Drizzle, Rain, Snow, Clear, Clouds
+
+// Weather type (athmosphere): Mist, Smoke, Haze, Dust, Fog, Sand, Dust, Ash,
+// Squall, Tornado
