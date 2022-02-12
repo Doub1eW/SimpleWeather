@@ -2,6 +2,7 @@ const searchForm = document.querySelector(".search-form");
 const searchInput = document.querySelector(".search-input");
 const wrapperCityName = document.querySelector(".wrapper-cityName");
 const timedCityName = document.querySelector(".timed-cityName");
+const bottomtitle = document.querySelector(".bottomtitle");
 
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -17,7 +18,8 @@ function convert(city) {
     })
     .then((data) => {
       wrapperCityName.textContent = city;
-      timedCityName.textContent = city;
+      //timedCityName.textContent = city;
+      bottomtitle.textContent = city;
 
       getWeather(data[0].lat, data[0].lon);
     });
@@ -33,7 +35,8 @@ function convertCoordsCity(lat, lon) {
     .then((data) => {
       console.log(data);
       wrapperCityName.textContent = data[0].name;
-      timedCityName.textContent = data[0].name;
+      //timedCityName.textContent = data[0].name;
+      bottomtitle.textContent = data[0].name;
     });
 }
 
@@ -50,6 +53,13 @@ function getCurrentLocation() {
   );
 }
 getCurrentLocation();
+
+function getWeekDay() {
+  new Date().toLocaleString("en-us", { weekday: "long" }).slice(0, 3);
+  console.log(Date);
+}
+
+getWeekDay();
 
 function getWeather(lat, lon) {
   document.querySelector(".right-upper-span").textContent = "°C";
