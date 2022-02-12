@@ -139,23 +139,23 @@ body {
   justify-content: center;
   align-items: center;
   gap: 50px;
-  width: 80%;
-  height: 500px;
+  width: 90%;
+  height: 600px;
 }
 
 .columnbase {
   height: 100%;
   /* flex: 1; */
-  width: 230px;
+  width: 300px;
 
   display: flex;
   flex-direction: column;
-  transition: all 0.2s ease-in;
+  transition: all 0.1s ease-in;
   gap: 10px;
 }
 
 .columnbase:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .columnhigher {
@@ -299,13 +299,14 @@ body::-webkit-scrollbar-thumb {
   flex: 1;
   height: 100%;
   border-radius: 29px;
-  background-color: #161a43;
+  background-color: #0d0031;
   border-radius: 20px;
   flex-direction: column;
   display: flex;
   align-items: center;
   font-family: "Poppins";
   font-weight: normal;
+  box-shadow: 15px 15px 12px #0707078a, -15px -15px 12px #06001f00;
 }
 
 .rightupperbox {
@@ -318,7 +319,8 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   font-family: "Poppins";
   font-size: 24px;
-  background-color: #161a43;
+  background-color: #0d0031;
+  box-shadow: 15px 15px 12px #0707078a, -15px -15px 12px #06001f00;
 }
 .rightlowerbox {
   flex: 1;
@@ -329,7 +331,8 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   font-family: "Poppins";
   font-size: 24px;
-  background-color: #161a43;
+  background-color: #0d0031;
+  box-shadow: 15px 15px 12px #0707078a, -15px -15px 12px #06001f00;
 }
 
 .moreinfo {
@@ -345,7 +348,6 @@ body::-webkit-scrollbar-thumb {
 .rightboxes {
   flex: 1.5;
   height: 100%;
-
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -353,7 +355,7 @@ body::-webkit-scrollbar-thumb {
 
 .allboxes {
   height: 50%;
-  width: 50%;
+  width: 70%;
   gap: 20px;
   color: #fff;
   display: flex;

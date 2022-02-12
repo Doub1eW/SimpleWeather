@@ -19,7 +19,7 @@ function convert(city) {
     .then((data) => {
       wrapperCityName.textContent = city;
       //timedCityName.textContent = city;
-      bottomtitle.textContent = city;
+      bottomtitle.textContent = "The Weather in " + city + " Today";
 
       getWeather(data[0].lat, data[0].lon);
     });
@@ -36,7 +36,7 @@ function convertCoordsCity(lat, lon) {
       console.log(data);
       wrapperCityName.textContent = data[0].name;
       //timedCityName.textContent = data[0].name;
-      bottomtitle.textContent = data[0].name;
+      bottomtitle.textContent = "The Weather in " + data[0].name + " Today";
     });
 }
 
