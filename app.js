@@ -16,7 +16,7 @@ function getDay(dt) {
 }
 
 function convert(city) {
-  const api = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=a44ac84a0376afc7ec22f54b1631dc2e`;
+  const api = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=a44ac84a0376afc7ec22f54b1631dc2e`;
 
   fetch(api)
     .then((response) => {
@@ -32,7 +32,7 @@ function convert(city) {
 }
 
 function convertCoordsCity(lat, lon) {
-  const api = `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=a44ac84a0376afc7ec22f54b1631dc2e`;
+  const api = `https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=a44ac84a0376afc7ec22f54b1631dc2e`;
 
   fetch(api)
     .then((response) => {
