@@ -4,7 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Weather</title>
+    <link rel="icon" href="./assets/Weathericon.ico">
+    <title>Celsius.gg</title>
   </head>
   <body>
     <div id="wrap">
@@ -27,7 +28,7 @@
           <div class="right-upper">
             <h4 class="current-temp"></h4>
             <span class="right-upper-span"></span>
-            <img class="weather-icon" src="./assets/Cloud.svg" alt="" />
+            <img class="weather-icon" src="./assets/Clouds.png" alt="" />
           </div>
           <div class="right-lower">
             <p class="feels-like-text"></p>
@@ -36,6 +37,7 @@
           </div>
         </div>
       </div>
+
       <a href="#box" class="arrow">
         <img src="./assets/arrow.svg" alt="" />
       </a>
@@ -49,10 +51,14 @@
             <h3 class="day-1">Monday</h3>
           </div>
           <div class="columnlower">
-            <h2 class="day-1-temp">-2</h2>
+            <div class="day-description">
+              <h4 class="day-1-description"></h4>
+            </div>
             <img class="day-1-img" src="assets/Cloud.svg" alt="" />
-
+            <h2 class="day-1-temp">-2</h2>
+            <div class="dayfeels">
             <h3 class="day-1-feels">Feels like -6</h3>
+          </div>
           </div>
         </div>
         <div class="columnbase">
@@ -60,10 +66,14 @@
             <h3 class="day-2">Tuesday</h3>
           </div>
           <div class="columnlower">
-            <h2 class="day-2-temp">-2</h2>
+            <div class="day-description">
+              <h4 class="day-2-description"></h4>
+            </div>
             <img class="day-2-img" src="assets/Cloud.svg" alt="" />
-
-            <h3 class="day-2-feels">Feels like -6</h3>
+            <h2 class="day-2-temp">-2</h2>
+            <div class="dayfeels">
+              <h3 class="day-2-feels">Feels like -6</h3>
+            </div>
           </div>
         </div>
         <div class="columnbase">
@@ -71,10 +81,14 @@
             <h3 class="day-3">Wednesday</h3>
           </div>
           <div class="columnlower">
-            <h2 class="day-3-temp">-2</h2>
+            <div class="day-description">
+              <h4 class="day-3-description"></h4>
+            </div>
             <img class="day-3-img" src="assets/Cloud.svg" alt="" />
-
+            <h2 class="day-3-temp">-2</h2>
+            <div class="dayfeels">
             <h3 class="day-3-feels">Feels like -6</h3>
+          </div>
           </div>
         </div>
         <div class="columnbase">
@@ -82,10 +96,14 @@
             <h3 class="day-4">Thursday</h3>
           </div>
           <div class="columnlower">
-            <h2 class="day-4-temp">-2</h2>
+            <div class="day-description">
+              <h4 class="day-4-description"></h4>
+            </div>
             <img class="day-4-img" src="assets/Cloud.svg" alt="" />
-
+            <h2 class="day-4-temp">-2</h2>
+            <div class="dayfeels">
             <h3 class="day-4-feels">Feels like -6</h3>
+          </div>
           </div>
         </div>
         <div class="columnbase">
@@ -93,10 +111,14 @@
             <h3 class="day-5">Friday</h3>
           </div>
           <div class="columnlower">
-            <h2 class="day-5-temp">-2</h2>
+            <div class="day-description">
+              <h4 class="day-5-description"></h4>
+            </div>
             <img class="day-5-img" src="assets/Cloud.svg" alt="" />
-
+            <h2 class="day-5-temp">-2</h2>
+            <div class="dayfeels">
             <h3 class="day-5-feels">Feels like -6</h3>
+          </div>
           </div>
         </div>
       </div>
@@ -106,35 +128,34 @@
       </a>
     </div>
 
-    <div class="moreinfo" id="moreinfo">
+     <div class="moreinfo" id="moreinfo">
       <h1 class="bottomtitle"></h1>
-      <div class="allboxes">
-        <div class="leftbox">
-          <h2 class="leftboxtitle">
-            Next Few Hours!
-            <h3 class="leftboxrow1">test</h3>
-            <h4 class="leftboxrow2">test</h4>
-          </h2>
+      <div class="bottombox">
+        <div class="bottomboxrows">
+          <div class="bottomboxrow1">The temperature ranges from -6 to 20</div>
+          <div class="bottomboxrow2">Wind speed is 5ms with wind gusts up to 9ms</div>
+          <div class="bottomboxrow3">The humidity is 17%</div>
+          <div class="bottomboxrow4"></div>
+          <div class="bottomboxrow5">Take a jacket, it will be a bit chilly.</div>
         </div>
-        <div class="rightboxes">
-          <div class="rightupperbox">
-            <div class="rightupperboxtitle">
-              Sample Text
-              <div class="rightupperboxrow1"></div>
-              <div class="rightupperboxrow2"></div>
-            </div>
+        <div class="bottomboxicons">
+          <div class="bottomboxicons1">
+            <img class="thermometer" src="assets/thermo.svg" alt="" />
           </div>
-          <div class="rightlowerbox">
-            <div class="rightlowerboxtitle">
-              Sample Text
-              <div class="rightlowerboxrow1"></div>
-              <div class="rightlowerboxrow2"></div>
-            </div>
-          </div>
+          
+          <div class="bottomboxicons2"><img class="windicon" src="assets/wind.svg" alt="" /></div>
+          <div class="bottomboxicons3"><img class="humidityicon" src="assets/drop.svg" alt="" /></div>
+          <div class="bottomboxicons4"><img class="sunmoonicon" src="assets/sunmoon.svg" alt="" /></div>
+          <div class="bottomboxicons5"><img class="smileyicon" src="assets/smiley.svg" alt="" /></div>
+
         </div>
+        
       </div>
+      <div class="footer">Have a nice day!</div>
     </div>
-    <div class="scroll"></div>
+    
+  </div>
+     <div class="scroll"></div>
     <script src="app.js"></script>
   </body>
 </html>

@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hurricane&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 @font-face {
   font-family: "digital";
   src: url("./fonts/digital-7.ttf") format("truetype");
@@ -185,8 +188,14 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
+  font-family: "Poppins", sans-serif;
 }
 
+.dayfeels {
+  font-family: "Raleway", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
 .columnlower img {
   width: 60%;
 }
@@ -342,7 +351,9 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   gap: 50px;
 }
-
+.rightupperboxtitle {
+  align-items: center;
+}
 .rightboxes {
   flex: 1.5;
   height: 100%;
@@ -350,7 +361,21 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   gap: 20px;
 }
-
+.rightupperboxrow1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hourlytime {
+  border-bottom: 10px;
+  display: flex;
+  gap: 20px;
+}
+.hourlydegree {
+  border-bottom: 10px;
+  display: flex;
+  gap: 20px;
+}
 .allboxes {
   height: 50%;
   width: 70%;
@@ -369,4 +394,112 @@ body::-webkit-scrollbar-thumb {
 .leftboxtitle {
   font-size: 20px;
   margin-top: 10%;
+}
+
+.day-description {
+  font-size: 30px;
+}
+
+.bottombox {
+  height: 50%;
+  width: 45%;
+  /* background-color: #0d0031; */
+  /* border-radius: 20px; */
+  border-radius: 50px;
+  background: linear-gradient(145deg, #0c002c, #0e0034);
+  box-shadow: 20px 20px 27px #000000, -20px -20px 27px #130f22;
+  font-size: 38px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.bottomboxicons {
+  width: 13%;
+  height: 100%;
+  background-color: #192443;
+  border-radius: 25px;
+  background: linear-gradient(145deg, #677ab4, #1b2748);
+  box-shadow: 20px 20px 60px #0f1527, -20px -20px 60px #0b0f1b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.bottomboxicons1 {
+  height: 20%;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.bottomboxicons2 {
+  height: 20%;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.bottomboxicons3 {
+  height: 20%;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.bottomboxicons4 {
+  height: 20%;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.bottomboxicons5 {
+  height: 20%;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.humidityicon {
+  width: 40%;
+  height: auto;
+  margin: auto;
+}
+.windicon {
+  width: 50%;
+  height: auto;
+  margin: auto;
+}
+.thermometer {
+  width: 50%;
+  height: auto;
+  margin: auto;
+}
+.sunmoonicon {
+  width: 55%;
+  height: auto;
+  margin: auto;
+}
+.smileyicon {
+  width: 40%;
+  height: auto;
+  margin: auto;
+}
+
+.bottomboxrows {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 87%;
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.footer {
+  margin-top: 2%;
+  font-size: 60px;
+  font-family: "Hurricane", cursive;
 }
