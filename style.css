@@ -31,6 +31,7 @@ body {
   font-family: "Poppins", sans-serif;
   scrollbar-color: white;
   scrollbar-width: thin;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -44,7 +45,6 @@ body {
 }
 
 .arrow {
-  /* display: none; */
   position: absolute;
   bottom: 5vh;
   gap: 10%;
@@ -63,8 +63,6 @@ body {
 .wrapper-inner {
   display: flex;
   gap: 100px;
-  /* align-items: center; */
-  /* background-color: pink; */
 }
 
 .left {
