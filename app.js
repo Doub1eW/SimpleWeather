@@ -87,13 +87,14 @@ function converttime(data) {
 }
 function ifchilly(data) {
   let a = data.daily[0].temp.max;
-  let b = data.daily[0].temp.min;
-  if (a - b >= 10) {
+
+  //let b = data.daily[0].temp.min;
+  if (a > 16) {
     document.querySelector(".bottomboxrow5").textContent =
-      "Temperature varies a bit today";
-  } else {
+      "Today it will be warm, enjoy it!";
+  } else if (a < 16) {
     document.querySelector(".bottomboxrow5").textContent =
-      "Temperature doesn't differ much today";
+      "Today is a bit cold, grab a jacket!";
   }
 }
 

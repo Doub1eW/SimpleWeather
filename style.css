@@ -85,8 +85,8 @@ body {
 }
 
 .right-upper-span {
-  margin-bottom: 30px;
-  font-size: 32px;
+  margin-bottom: 20%;
+  font-size: 30%;
 }
 
 .right-lower {
@@ -97,21 +97,21 @@ body {
 
 .feels-like-temp {
   margin-left: 10px;
-  font-size: 32px;
+  font-size: 4vh;
 }
 
 .right-lower p {
-  font-size: 32px;
+  font-size: 4vh;
 }
 
 .right-lower-span {
-  margin-bottom: 10px;
+  margin-bottom: 10%;
 }
 
 .right-upper img {
   display: none;
   margin-left: 10px;
-  width: 90px;
+  width: 10vh;
 }
 
 .box {
@@ -141,6 +141,7 @@ body {
 .columnbase {
   height: 50vh;
   width: 10vw;
+  max-width: 50%;
 
   display: flex;
   flex-direction: column;
@@ -148,8 +149,15 @@ body {
   gap: 10px;
 }
 
+.weeklytemp {
+  font-size: 100px;
+}
 .columnbase:hover {
   transform: scale(1.05);
+}
+
+.day-5 {
+  font-size: 50px;
 }
 
 .columnhigher {
@@ -157,7 +165,7 @@ body {
   padding: 10px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  background-color: #161a43;
+  background-color: #535892;
   box-shadow: 15px 15px 12px #0707078a, -15px -15px 12px #06001f00;
   display: flex;
   align-content: center;
@@ -169,13 +177,18 @@ body {
   font-size: 34px;
 }
 
+.weeklyimage {
+  max-height: 100%;
+  max-width: 100%;
+}
+
 .columnlower {
   flex: 1;
-  background-color: #0d0031;
+
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   padding: 0 10px;
-  background-color: #161a43;
+  background-color: #535892;
   box-shadow: 15px 15px 12px #0707078a, -15px -15px 12px #06001f00;
   display: flex;
   align-items: center;
@@ -187,7 +200,6 @@ body {
 .dayfeels {
   font-family: "Raleway", sans-serif;
   color: rgb(255, 255, 255);
-  font-size: 18px;
 }
 .columnlower img {
   width: 60%;
