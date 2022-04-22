@@ -91,7 +91,7 @@ function ifchilly(data) {
   //let b = data.daily[0].temp.min;
   if (a > 16) {
     document.querySelector(".bottomboxrow5").textContent =
-      "Today it will be warm, enjoy it!";
+      "Today will be warm, enjoy it!";
   } else if (a < 16) {
     document.querySelector(".bottomboxrow5").textContent =
       "Today is a bit cold, grab a jacket!";
